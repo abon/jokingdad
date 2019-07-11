@@ -10,13 +10,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 30%;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1),
     inset 0 0 25px #5e1072cb;
+  z-index: 2;
 }
 
 .JokeList-title {
-  font-size: 2.1rem;
+  font-size: 2rem;
   margin: 2rem;
   color: #f1ff2c;
   letter-spacing: 0.3rem;
@@ -27,6 +28,12 @@
 }
 
 .JokeList-jokes {
-  height: 80%;
+  height: 90%;
   background: white;
+  align-self: center;
+  width: 80%;
+  font-size: 13.8px;
+  overflow: scroll;
+  /* -webkit-box-shadow: 3px 3px 5px 1px #911a7de3; */
+  box-shadow: 3px 3px 30px 1px #81144bfb;
 }
