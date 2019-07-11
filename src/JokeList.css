@@ -5,5 +5,28 @@
 }
 
 .JokeList-sidebar {
-  background: #ff5e528f;
+  background: #731d968f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1),
+    inset 0 0 25px #5e1072cb;
+}
+
+.JokeList-title {
+  font-size: 2.1rem;
+  margin: 2rem;
+  color: #f1ff2c;
+  letter-spacing: 0.3rem;
+}
+
+.JokeList img {
+  width: 60%;
+}
+
+.JokeList-jokes {
+  height: 80%;
+  background: white;
 }
