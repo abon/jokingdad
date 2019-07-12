@@ -10,7 +10,7 @@ export default class JokeList extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { jokes: [] };
+    this.state = { jokes: [], loading: false };
   }
   async componentDidMount() {
     let jokes = [];
@@ -29,6 +29,10 @@ export default class JokeList extends Component {
         j.id === id ? { ...j, votes: j.votes + delta } : j
       )
     }));
+  }
+
+  handleClick() {
+    this.setState({ loading: true });
   }
   render() {
     return (
